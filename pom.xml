@@ -26,7 +26,7 @@
   </parent>
   <groupId>io.artifexlabs.parents</groupId>
   <artifactId>artifex-maven-parent</artifactId>
-  <version>2-SNAPSHOT</version>
+  <version>1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>${project.artifactId}</name>
   <description>Parent for artifexlabs.io Maven/Java Projects</description>
