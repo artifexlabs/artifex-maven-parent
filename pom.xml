@@ -51,6 +51,7 @@
     </site>
   </distributionManagement>
   <properties>
+    <team.group.id>artifexlabs</team.group.id>
     <iblog.version>0.13.2-SNAPSHOT</iblog.version>
     <surefire.failIfNoTests>false</surefire.failIfNoTests>
     <jacoco.max.missed.classes>99</jacoco.max.missed.classes>
