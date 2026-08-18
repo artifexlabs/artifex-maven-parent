@@ -1,7 +1,7 @@
 <!--
 
     @formatter:off
-    Copyright © 2019 admin (admin@infrastructurebuilder.org)
+    Copyright © 2019 admin (admin@artifexlabs.io)
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -22,9 +22,9 @@
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent</artifactId>
-    <version>112</version>
+    <version>113</version>
   </parent>
-  <groupId>io.artifexlabs</groupId>
+  <groupId>io.artifexlabs.parents</groupId>
   <artifactId>artifex-maven-parent</artifactId>
   <version>1-SNAPSHOT</version>
   <packaging>pom</packaging>
@@ -40,19 +40,42 @@
   </licenses>
   <scm>
     <connection>scm:git:${git.url}</connection>
-    <url>scm:git:${git.url}</url>
     <developerConnection>scm:git:${git.url}</developerConnection>
+    <url>${git.scm.url}</url>
     <tag>HEAD</tag>
   </scm>
+  <issueManagement>
+    <url>${issue.management.url}</url>
+    <system>GitHub</system>
+  </issueManagement>
   <distributionManagement>
     <site>
       <id>central</id>
       <url>${site.target.url}/</url>
     </site>
   </distributionManagement>
+
   <properties>
     <team.group.id>artifexlabs</team.group.id>
-    <iblog.version>0.13.2-SNAPSHOT</iblog.version>
+    <git.http.url>${git.scm.url}.git</git.http.url>
+    <git.source.host>github.com</git.source.host>
+    <git.scm.url>https://${git.source.host}/${team.group.id}/${project.artifactId}</git.scm.url>
+    <git.url>git@${git.source.host}:${team.group.id}/${project.artifactId}.git</git.url>
+    <issue.management.url>https://${git.source.host}/${team.group.id}/${project.artifactId}/issues</issue.management.url>
+    <ci.url>https://ci.artifexlabs.io</ci.url>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <site.path>io.artifexlabs/artifex-maven-parent/${project.version}</site.path>
+    <ib.license.email>admin@artifexlabs.io</ib.license.email>
+    <ib.license.name>admin</ib.license.name>
+    <ib.site.path>${project.groupId}/${project.artifactId}/${project.version}</ib.site.path>
+    <ib.site.repo>repository/sites</ib.site.repo>
+    <ib.site.root>${ib.site.scheme}://${ib.site.server}/${ib.site.repo}</ib.site.root>
+    <ib.site.scheme>https</ib.site.scheme>
+    <ib.site.server>github.com</ib.site.server>
+    <ib.site.view.url>${ib.site.scheme}://${ib.site.server}/${project.artifactId}</ib.site.view.url>
+
+    <iblog.version>0.14.5</iblog.version>
     <surefire.failIfNoTests>false</surefire.failIfNoTests>
     <jacoco.max.missed.classes>99</jacoco.max.missed.classes>
     <test.coverage.percentage.required>0</test.coverage.percentage.required>
