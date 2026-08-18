@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
 
     @formatter:off
@@ -17,17 +18,20 @@
     @formatter:on
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent</artifactId>
     <version>113</version>
   </parent>
+
   <groupId>io.artifexlabs.parents</groupId>
   <artifactId>artifex-maven-parent</artifactId>
   <version>1-SNAPSHOT</version>
   <packaging>pom</packaging>
+
   <name>${project.artifactId}</name>
   <description>Parent for artifexlabs.io Maven/Java Projects</description>
   <url>${github.url.base}/${project.artifactId}</url>
@@ -38,6 +42,7 @@
       <distribution>repo</distribution>
     </license>
   </licenses>
+
   <scm>
     <connection>scm:git:${git.url}</connection>
     <developerConnection>scm:git:${git.url}</developerConnection>
@@ -83,6 +88,7 @@
     <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
     <quarkus.platform.version>3.27.5.1</quarkus.platform.version>
   </properties>
+
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -145,5 +151,4 @@
       </properties>
     </profile>
   </profiles>
-
 </project>
