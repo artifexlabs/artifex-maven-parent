@@ -35,6 +35,10 @@
   <name>${project.artifactId}</name>
   <description>Parent for artifexlabs.io Maven/Java Projects</description>
   <url>${github.url.base}/${project.artifactId}</url>
+  <organization>
+    <name>Artifex Labs</name>
+    <url>https://artifexlabs.io</url>
+  </organization>
   <licenses>
     <license>
       <name>Apache License, Version 2.0</name>
@@ -59,10 +63,6 @@
       <url>${site.target.url}/</url>
     </site>
   </distributionManagement>
-  <organization>
-    <name>Artifex Labs</name>
-    <url>https://artifexlabs.io</url>
-  </organization>
 
   <properties>
     <team.group.id>artifexlabs</team.group.id>
