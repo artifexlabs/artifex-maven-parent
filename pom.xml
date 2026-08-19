@@ -59,6 +59,10 @@
       <url>${site.target.url}/</url>
     </site>
   </distributionManagement>
+  <organization>
+    <name>Artifex Labs</name>
+    <url>https://artifexlabs.io</url>
+  </organization>
 
   <properties>
     <team.group.id>artifexlabs</team.group.id>
@@ -80,10 +84,9 @@
     <ib.site.server>github.com</ib.site.server>
     <ib.site.view.url>${ib.site.scheme}://${ib.site.server}/${project.artifactId}</ib.site.view.url>
 
-    <iblog.version>0.14.5</iblog.version>
     <surefire.failIfNoTests>false</surefire.failIfNoTests>
-    <jacoco.max.missed.classes>99</jacoco.max.missed.classes>
-    <test.coverage.percentage.required>0</test.coverage.percentage.required>
+    <jacoco.max.missed.classes>0</jacoco.max.missed.classes>
+    <test.coverage.percentage.required>95</test.coverage.percentage.required>
     <quarkus.platform.group-id>io.quarkus.platform</quarkus.platform.group-id>
     <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
     <quarkus.platform.version>3.27.5.1</quarkus.platform.version>
@@ -101,20 +104,6 @@
     </dependencies>
   </dependencyManagement>
   <dependencies>
-  <!--
-    <dependency>
-      <groupId>org.json</groupId>
-      <artifactId>json</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-api</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.infrastructurebuilder</groupId>
-      <artifactId>ibexceptions</artifactId>
-    </dependency>
-  -->
   </dependencies>
 
   <build>
